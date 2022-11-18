@@ -4,8 +4,14 @@ use PHPUnit\Framework\TestCase;
 use Twig\Loader\FilesystemLoader;
 use Twig\Environment;
 
+/**
+ * Twig fonctionne
+ */
 class Twig extends TestCase
 {
+    /**
+     * @return void
+     */
     public function testTemplate()
     {
         $loader = new  FilesystemLoader(dirname(__DIR__) . '/templates');
